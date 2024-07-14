@@ -1,0 +1,226 @@
+{
+    "Entities": [
+        {
+            "isActive": true,
+            "name": "tile2",
+            "scripts": [
+            ],
+            "id": 1,
+            "components": [
+                {
+                    "tag": "Test",
+                    "offset": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "enabled": true,
+                    "size": {
+                        "x": 1,
+                        "y": 1
+                    },
+                    "type": "Collider",
+                    "isPlatformerCollider": false,
+                    "isTrigger": false
+                },
+                {
+                    "rotation": 0,
+                    "crop": {
+                        "t": 0,
+                        "x": 0,
+                        "z": 0,
+                        "y": 0
+                    },
+                    "isFlipped": false,
+                    "layer": 0,
+                    "isWorldEntity": true,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "pixelsPerUnit": -1,
+                    "offset": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "center": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "size": {
+                        "x": 16,
+                        "y": 16
+                    },
+                    "imagePath": "tile_0004.png",
+                    "color": {
+                        "x": 255,
+                        "z": 255,
+                        "y": 255
+                    },
+                    "type": "Sprite"
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 6
+                    },
+                    "type": "Transform",
+                    "scale": {
+                        "x": 1,
+                        "y": 1
+                    }
+                }
+            ]
+        },
+        {
+            "isActive": true,
+            "name": "GameManager",
+            "scripts": [
+                {
+                    "name": "GameManager",
+                    "parameters": [
+                    ]
+                }
+            ],
+            "id": 2,
+            "components": [
+                {
+                    "position": {
+                        "x": 4,
+                        "y": -1
+                    },
+                    "type": "Transform",
+                    "scale": {
+                        "x": 1,
+                        "y": 1
+                    }
+                }
+            ]
+        },
+        {
+            "isActive": true,
+            "name": "Player",
+            "scripts": [
+                {
+                    "name": "PlayerMovement",
+                    "parameters": [
+                    ]
+                }
+            ],
+            "id": 3,
+            "components": [
+                {
+                    "animations": [
+                        {
+                            "animatedFPS": 60,
+                            "frames": [
+                                {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 16,
+                                    "t": 16
+                                },
+                                {
+                                    "x": 17,
+                                    "y": 0,
+                                    "z": 16,
+                                    "t": 16
+                                }
+                            ]
+                        }
+                    ],
+                    "type": "Animator"
+                },
+                {
+                    "tag": "Player",
+                    "offset": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "enabled": true,
+                    "size": {
+                        "x": 0.5,
+                        "y": 1
+                    },
+                    "type": "Collider",
+                    "isPlatformerCollider": false,
+                    "isTrigger": false
+                },
+                {
+                    "drag": 0.1,
+                    "mass": 1,
+                    "useGravity": true,
+                    "type": "Rigidbody"
+                },
+                {
+                    "rotation": 0,
+                    "crop": {
+                        "t": 16,
+                        "x": 0,
+                        "z": 16,
+                        "y": 0
+                    },
+                    "isFlipped": false,
+                    "layer": 0,
+                    "isWorldEntity": true,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "pixelsPerUnit": -1,
+                    "offset": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "center": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "size": {
+                        "x": 33,
+                        "y": 16
+                    },
+                    "imagePath": "PlayerWalkNoGun.png",
+                    "color": {
+                        "x": 255,
+                        "z": 255,
+                        "y": 255
+                    },
+                    "type": "Sprite"
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 5
+                    },
+                    "type": "Transform",
+                    "scale": {
+                        "x": 1,
+                        "y": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "TextBoxes": [
+        {
+            "fontSize": 40,
+            "name": "TextBox",
+            "id": 1,
+            "isWorldEntity": false,
+            "position": {
+                "x": 292,
+                "y": 376
+            },
+            "persistentBetweenScenes": false,
+            "isCenteredX": true,
+            "alpha": 255,
+            "size": {
+                "x": 216,
+                "y": 48
+            },
+            "isCenteredY": true,
+            "fontPath": "FiraCode//ttf//FiraCode-Medium.ttf",
+            "text": "Test text"
+        }
+    ]
+}
