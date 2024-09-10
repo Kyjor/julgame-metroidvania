@@ -201,7 +201,7 @@
             ]
         }
     ],
-    "TextBoxes": [
+    "UIElements": [
         {
             "fontSize": 40,
             "name": "TextBox",
@@ -220,7 +220,8 @@
             },
             "isCenteredY": true,
             "fontPath": "FiraCode//ttf//FiraCode-Medium.ttf",
-            "text": "Test text"
+            "text": "Test text",
+            "type": "TextBox"
         }
     ]
 }

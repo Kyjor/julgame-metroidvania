@@ -4,10 +4,10 @@ module Metroidvania
     using JulGame.SceneBuilderModule
 
     function run()
+        JulGame.MAIN = JulGame.Main(Float64(1.0))
         JulGame.PIXELS_PER_UNIT = 16
-        scene = Scene("scene.json")
-        main = scene.init("JulGame Example", false, Vector2(1920, 1080),Vector2(576, 576), true, 1.0, true, 120)
-        return main
+        scene = SceneBuilderModule.Scene("scene.json")
+        SceneBuilderModule.load_and_prepare_scene(;this=scene)
     end
 
     julia_main() = run()
